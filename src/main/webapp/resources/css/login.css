@@ -1,0 +1,47 @@
+input {padding: 2px 0 2px 8px;}	
+html{
+     /* 드래그 방지 */
+     -ms-user-select: none;
+     -moz-user-select: -moz-none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     user-select: none;
+}
+.content{
+	margin: 0 auto;
+	margin-top:80px;
+	height: 350px;width: 600px;
+	border-radius:10%;
+	background-color: rgba(155,100,50,.3);
+	color: #88603e;
+}
+.content h2{padding: 30px;text-align: center; border-bottom: 3px solid white;}
+
+.content form{margin: 0 auto;margin-left: 120px;width: 700%; margin-top: 60px}
+.content form label{width: 120px;display: inline-block;
+			padding: 7px 0; vertical-align: top;}
+.content form button{
+	margin-left: 340px; padding: 5px 10px;border-radius: 5px;
+	background-color: white; color: #8B4513; }		
+.content form button:active{
+	background-color: #F3CF98; outline: none;  }	
+	
+
+.content_member{
+	margin: 0 auto;
+	margin-top:80px;
+	height: 450px;width: 600px;
+	border-radius:10%;
+	background-color: rgba(155,100,50,.3);
+	color: #88603e;
+}
+.content_member h2{padding: 30px;text-align: center; border-bottom: 3px solid white;}
+
+.content_member form{margin: 0 auto;margin-left: 120px;width: 700%; margin-top: 30px}
+.content_member form label{width: 120px;display: inline-block;
+			padding: 7px 0; vertical-align: top;}
+.content_member form button{
+	margin-left: 340px; padding: 5px 10px;border-radius: 5px;
+	background-color: white; color: #8B4513; }		
+.content_member form button:active{
+	background-color: #F3CF98; outline: none;  }	

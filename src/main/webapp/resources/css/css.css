@@ -1,0 +1,70 @@
+html{
+     /* 드래그 방지 */
+     -ms-user-select: none;
+     -moz-user-select: -moz-none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     user-select: none;
+}
+*{box-sizing: border-box;font-family: "210 나무고딕"}
+#wrap{width: 1080px;margin: auto;}
+a:hover{text-decoration: none;}
+
+div ul{list-style: none; display: flex;}
+.nav{position: absolute;}
+.login ul{justify-content: flex-end;}
+.login li{padding: 10px 10px 0 10px;}
+.login ul li a:hover{text-decoration: none;text-decoration: none; color: orange; padding-bottom: 3px;
+                border-bottom: 2px solid orange; transition: all 0.25s;}
+
+.category {display: flex; justify-content: space-between; }
+.category_log img{width: 150px;margin-left: 30px}
+.category_menu li{padding: 15px 30px 0px 30px;font-size: 22px; margin-top:35px; }
+.category ul li .menu:hover{text-decoration: none;text-decoration: none; color: orange; padding-bottom: 3px;
+                border-bottom: 2px solid orange; transition: all 0.25s;}
+nav ul li a{text-decoration: none; color: #8B4513;}
+.hr{border: 0;
+    height: 1px;
+    background: #8B4513;
+    opacity: 0.3}
+
+/* header {margin: 0 auto; background-color: red; }
+header .carousel-inner img{width: 700prgb(168, 137, 108), 137, 108), 96, 62)t: 200px} */
+
+.content1{display:flex; width: 700px;margin: auto;margin-top: 50px;height: 200px;}
+.new_menu{width:30%;background-color: #7B5033;box-sizing:border-box; }
+#font{margin:0 auto;font-family:"210 세잎클로버";z-index: 1;color: white;font-size: 30px; padding-right: 10px;}
+#menu_img{width: 130px;margin-left:40px;z-index: 0}
+#menu_img2{width: 130px;margin-left:23px;}
+.sidemenu{width:70%;background-color: #F3CF98;}
+
+.content2{display:flex; width: 1080px; margin-top: 50px; margin-bottom:30px;}
+.content2 #c2{margin-right: 30px;width: 33.3333%}
+.e_img{width: 100%;}
+#font2{ font-size: 20px; color: #8B5033;}
+#logo_menu{width: 50px;margin-left: 10px}
+#menu_title{display: flex;justify-content: space-between;}
+
+.full-page{height: 300px;}
+
+.back-image{background-image: url("../resources/footer.png");
+			width: 1080;
+			}
+#N_content{color: #8B5033;font-size: 11px;}
+#notice{margin-top:30px; border-bottom: 2px solid #8B5033; 
+	border-top: 2px solid #8B5033;opacity: 90%;}
+
+
+footer {display: flex; }
+footer #btn_top{
+	position: fixed; right: 10px; bottom: 10px;  transform: scale(1);
+    transition:all 0.3s;z-index: 100;
+}
+footer .up_icon img{
+	width: 60px; padding:18px; left:50px;background-color:rgba(128,50,0,.8);border-radius:100%; opacity: 0.5 }
+footer .up_icon img:hover{opacity: 1;transition:0.2s}
+footer .up_icon .btn_top{transition:0.9s;}
+
+footer.sns{display: flex;}
+
+.sns {width: 40px;margin: 5px}
