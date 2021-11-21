@@ -21,6 +21,7 @@ public class AlertMsg implements MemberSessionName{
 			int result,HttpSession session, String id) {
 		if(result ==1) {
 			session.setAttribute(LOGIN, id);
+			System.out.println("alermsg에서 "+session.getAttribute(LOGIN));
 			return msg(request,response,"jin cafe에 오신걸 환영합니다.","/main");
 		}else if(result ==0) {
 			return msg(request,response,"비밀번호가 틀립니다","/login");

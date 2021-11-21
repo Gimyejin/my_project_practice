@@ -42,7 +42,7 @@
 					<li><a href="introduce" class="menu"><b>카페 소개</b></a></li>
 					<li><a href="#" class="menu"><b>메뉴</b></a></li>
 					<li><a href="#" class="menu"><b>매장정보</b></a></li>
-					<li><a href="#" class="menu"><b>커뮤니티</b></a></li>
+					<li><a href="boardAllList" class="menu"><b>커뮤니티</b></a></li>
 				</ul>
 			</div>
 		</nav>

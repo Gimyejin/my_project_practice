@@ -9,12 +9,14 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.care.practice.common.AlertMsg;
+import com.care.practice.common.MemberSessionName;
 import com.care.practice.main.service.MainService;
 import com.care.practice.member.dto.MemberDTO;
 
@@ -64,6 +66,7 @@ public class MainController {
 	public void postLogin(HttpServletRequest request, HttpServletResponse response, @RequestParam("id") String id,
 			@RequestParam String pwd, HttpSession session) throws IOException {
 		int result = ms.loginChk(id, pwd);
+		System.out.println("컨트롤러에서 "+session.getAttribute(MemberSessionName.LOGIN));
 		am = new AlertMsg();
 		String message = am.loginMsg(request, response, result,session,id);
 		response.setContentType("text/html; charset=utf-8");
@@ -79,4 +82,10 @@ public class MainController {
 		out = response.getWriter();
 		out.println(message);
 	}
+	@GetMapping("memberList")
+	public String memberList(Model model) {
+		ms.list(model);
+		return "member/memberList";
+	}
+	
 }

@@ -14,5 +14,7 @@
 	<select id="loginChk" resultMap="member">
 		select * from jin_cafe where id = #{id}
 	</select>
-
+	<select id="list" resultMap="member">
+		select * from jin_cafe
+	</select>
 </mapper>
