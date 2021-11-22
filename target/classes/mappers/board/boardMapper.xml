@@ -15,4 +15,8 @@
 	<select id="selectAllBoardList" resultMap="board">
 		select * from cafe_board
 	</select>
+	<insert id="writeSave">
+		insert into cafe_board(write_no,id,title,content,image_file_name)
+		values(cafe_board_seq.nextval,#{id},#{title},#{content},#{imageFileName})
+	</insert>
 </mapper>

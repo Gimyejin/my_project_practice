@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
    pageEncoding="UTF-8"%>
-
 <head>
 <meta charset="UTF-8">
 <title>글쓰기창</title>
@@ -11,6 +10,7 @@
   function submit(){
 	  fo.sumbit();
   }
+  
 </script>
 
 </head>
@@ -18,10 +18,10 @@
 <c:import url="../default/header.jsp" />
 <div id="wrap" style="width: 400px; margin: 0 auto; ">
    <h1 style="text-align: center">글쓰기</h1>
-   <form method="post" action="${contextPath}/writeSave" 
-                                 enctype="multipart/form-data">
-      <b>작성자</b><br>   <!-- readonly : 읽기 전용 -->
-      <input type="text" name="id" value="${loginUser }" readonly />
+   <form  action="${contextPath}/writeSave" method="post"
+                                enctype="multipart/form-data">
+      <b>작성자</b><br>  
+      <input type="text" name="id" value="${loginuser}" readonly />
       <hr>
       <b>제목</b> <br> <input type="text" size="50" name="title" /><hr>
        <b>내용</b> <br>

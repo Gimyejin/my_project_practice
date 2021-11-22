@@ -33,4 +33,11 @@ public class AlertMsg implements MemberSessionName{
 		session.invalidate();
 		return msg(request,response,"로그아웃 되었습니다.","/main");
 	}
+	public String writeSave(int result, HttpServletRequest request, HttpServletResponse response) {
+		if(result ==1) {
+			return msg(request,response,"작성이 완료되었습니다.","/boardAllList");
+		}else {
+			return msg(request,response,"저장에 실패하였습니다.","/boardAllList");
+		}
+	}
 }

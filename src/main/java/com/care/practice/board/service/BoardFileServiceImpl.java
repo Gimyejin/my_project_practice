@@ -1,5 +1,8 @@
 package com.care.practice.board.service;
 
-public class BoardFileServiceImpl {
+import org.springframework.stereotype.Service;
+
+@Service
+public class BoardFileServiceImpl implements BoardFileService{
 
 }

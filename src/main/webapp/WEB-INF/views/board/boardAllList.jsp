@@ -12,7 +12,7 @@
 	<c:import url="../default/header.jsp" />
 	<div id="wrap" align="center">
 		<hr class="hr">
-		<table border="1">
+		<table border="1" style="width: 700px">
 			<caption>
 				<h2>커뮤니티</h2>
 			</caption>
@@ -24,7 +24,16 @@
 				<th>조회수</th>
 				<th>이미지 이름</th>
 			</tr>
-
+			<c:forEach var="board" items="${list }">
+				<tr>
+					<td>${board.writeNo }</td>
+					<td>${board.id}</td>
+					<td>${board.title }</td>
+					<td>${board.saveDate }</td>
+					<td>${board.hit }</td>
+					<td>${board.imageFileName }</td>
+				</tr>
+			</c:forEach>
 			<tr>
 				<td colspan="6">
 					<button type="button" onclick="location.href='${contextPath }/writeForm'">글작성</button>
